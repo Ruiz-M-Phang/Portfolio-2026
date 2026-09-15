@@ -14,11 +14,21 @@
             </style>
         @endif
 </head>
-<body class="bg-black">
-    <nav class="flex p-5 text-center justify-center gap-5 text-white">
-        <a href="{{ route('home') }}" class="">Home</a>
-        <p>Projecten</p>
-        <a href="{{ route('over_mij') }}" class="">Over mij</a>
+<body class="bg-white">
+    <nav class="flex bg-black p-5 border-b-4 border-black-500 text-center justify-center gap-200 text-white">
+        <a href="{{ route('home') }}" class="">Portfolio</a>
+        <ul class="flex gap-5">
+            <li>
+                <a href="{{ route('over_mij') }}" class="">Over mij</a>
+            </li>
+            <li>
+                <a href="{{ route('projecten') }}" class="">Projecten</a>
+            </li>
+            <li>
+                <a href="{{ route('contact') }}" class="">Contact</a>
+            </li>
+        </ul>
     </nav>
+    {{ $content }}
 </body>
 </html>

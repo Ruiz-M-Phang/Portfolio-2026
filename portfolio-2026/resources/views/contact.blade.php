@@ -1,8 +1,8 @@
 <x-layouts.layout>
     <x-slot name="title">
-        <title>Portfolio</title>
+        <title>Portfolio | Contact</title>
     </x-slot>
     <x-slot name="content">
-        <p>{{ $testBericht }}</p>
+        <p></p>
     </x-slot>
 </x-layouts.layout>
