@@ -6,10 +6,19 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $testBericht = "test";
+        $fullname = "Ruíz Martijn Phang";
 
-        return view('home', [ // een test of een string op de home pagina is te zien
-            "testBericht" => "$testBericht"
-        ]);
+        $skills_array = [
+            "PHP", "MySQL", "Docker", 
+            "Laravel", "Git", "HTML", 
+            "CSS", "Javascript", "Batchfile/cmd"
+            ];
+
+        $title = "projecten";
+
+        return view('home', [
+            "fullname" => "$fullname",
+            "title" => "$title",
+        ])->with("skills_array",$skills_array);
     }
 }

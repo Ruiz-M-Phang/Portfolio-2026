@@ -14,8 +14,9 @@
             </style>
         @endif
 </head>
-<body class="bg-white">
-    <nav class="flex bg-black p-5 border-b-4 border-black-500 text-center justify-center gap-200 text-white">
+<body class="bg-white font-sans">
+    <header>
+        <nav class="flex bg-black p-5 border-b-4 border-gray-500 text-center justify-center gap-200 text-white">
         <a href="{{ route('home') }}" class="">Portfolio</a>
         <ul class="flex gap-5">
             <li>
@@ -28,7 +29,15 @@
                 <a href="{{ route('contact') }}" class="">Contact</a>
             </li>
         </ul>
-    </nav>
-    {{ $content }}
+        </nav>
+    </header>
+    <main>
+        {{ $content }}
+    </main>
+    <footer class="flex bg-black text-center justify-center">
+        <p class="text-white m-5">
+            &copy; {{ date('Y') }} Portfolio gemaakt door Ruiz M. Phang. Gebouwd met Laravel.
+        </p>
+    </footer>
 </body>
 </html>
