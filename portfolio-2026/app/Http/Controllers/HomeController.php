@@ -19,6 +19,6 @@ class HomeController extends Controller
         return view('home', [
             "fullname" => "$fullname",
             "title" => "$title",
-        ])->with("skills_array",$skills_array);
+        ])->with("skills_array",$skills_array); // With the with fuction you can give an array to the view function
     }
 }

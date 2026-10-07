@@ -14,8 +14,8 @@
             </style>
         @endif
 </head>
-<body class="bg-white font-sans">
-    <header>
+<body class="bg-pink-100 font-sans">
+    <header class="fixed top-0 w-[100%]">
         <nav class="flex bg-black p-5 border-b-4 border-gray-500 text-center justify-center gap-200 text-white">
         <a href="{{ route('home') }}" class="">Portfolio</a>
         <ul class="flex gap-5">
@@ -31,12 +31,12 @@
         </ul>
         </nav>
     </header>
-    <main>
+    <main class="py-18">
         {{ $content }}
     </main>
-    <footer class="flex bg-black text-center justify-center">
+    <footer class="fixed bottom-0 w-[100%] flex bg-black text-center justify-center">
         <p class="text-white m-5">
-            &copy; {{ date('Y') }} Portfolio gemaakt door Ruiz M. Phang. Gebouwd met Laravel.
+            &copy; {{ date('Y') }} Portfolio gemaakt door Ruiz M. Phang. Gebouwd met Laravel en Tailwind.
         </p>
     </footer>
 </body>

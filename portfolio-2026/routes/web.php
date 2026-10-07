@@ -7,11 +7,11 @@ use App\Http\Controllers\ProjectenController;
 use App\Http\Controllers\ContactController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/over_mij', [OverMijController::class, 'index'])->name('over_mij');
 

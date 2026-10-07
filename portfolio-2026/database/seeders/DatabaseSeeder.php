@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
+        User::factory()->create([ // Here I say I want to use the user model and from there the factory belongen to user and than create the following database data
+            'name' => 'Test User', // COLUMN => VALUE
             'email' => 'test@example.com',
         ]);
     }
