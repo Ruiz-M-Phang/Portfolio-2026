@@ -17,16 +17,16 @@
 <body class="bg-pink-100 font-sans">
     <header class="fixed top-0 w-[100%]">
         <nav class="flex bg-black p-5 border-b-4 border-gray-500 text-center justify-center gap-200 text-white">
-        <a href="{{ route('home') }}" class="">Portfolio</a>
+        <a href="{{ route('home') }}" class="hover:underline">Portfolio</a>
         <ul class="flex gap-5">
             <li>
-                <a href="{{ route('over_mij') }}" class="">Over mij</a>
+                <a href="{{ route('over_mij') }}" class="hover:underline">Over mij</a>
             </li>
             <li>
-                <a href="{{ route('projecten') }}" class="">Projecten</a>
+                <a href="{{ route('projecten') }}" class="hover:underline">Projecten</a>
             </li>
             <li>
-                <a href="{{ route('contact') }}" class="">Contact</a>
+                <a href="{{ route('contact') }}" class="hover:underline">Contact</a>
             </li>
         </ul>
         </nav>

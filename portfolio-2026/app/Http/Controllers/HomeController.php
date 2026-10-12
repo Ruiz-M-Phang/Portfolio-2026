@@ -14,11 +14,34 @@ class HomeController extends Controller
             "CSS", "Javascript", "Batchfile/cmd"
             ];
 
+        $preferences = [
+            "plus" => [
+                "In een team werken",
+                "Backend werk",
+                "Zelfstandigheid",
+                "Vrijheid",
+                "Laravel werkzaamheden",
+                "Database werkzaamheden",
+            ],
+            "minus" => [
+                "Veel taken krijgen",
+                "Monotonerig werk",
+                "Verplicht worden",
+                "Aangeraakt worden door mannen", // <- dit is een grapje
+            ],
+        ];
+
+        $PlusPreferences = $preferences["plus"];
+
+        $MinusPreferences = $preferences["minus"];
+
         $title = "projecten";
 
         return view('home', [
             "fullname" => "$fullname",
             "title" => "$title",
-        ])->with("skills_array",$skills_array); // With the with fuction you can give an array to the view function
+        ])->with("skills_array",$skills_array)
+        ->with("PlusPreferences",$PlusPreferences)
+        ->with("MinusPreferences",$MinusPreferences); // With the with fuction you can give an array to the view function
     }
 }
